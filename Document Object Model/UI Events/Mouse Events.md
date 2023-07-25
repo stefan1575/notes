@@ -35,12 +35,12 @@ This is useful for the `mouseup` and `mousedown` handlers since they trigger on 
 
 Mouse events also include information about pressed modifier keys which is useful for modifier plus click combinations:
 
-- `shiftKey` - Shift
-- `altKey` - Alt / Opt (Mac)
-- `ctrlKey` - Ctrl
-- `metaKey` - Cmd (Mac)
+- `shiftKey` - <kbd>Shift</kbd>
+- `altKey` - <kbd>Alt</kbd> / <kbd>Opt</kbd> (Mac)
+- `ctrlKey` - <kbd>Ctrl</kbd>
+- `metaKey` - <kbd>Cmd</kbd> (Mac)
 
-In Windows, Ctrl corresponds to Cmd in Mac. This means that if we want to support both operating systems we have to check both `(event.ctrlKey || event.metaKey)`.
+In Windows, <kbd>Ctrl</kbd> corresponds to <kbd>Cmd</kbd> in Mac. This means that if we want to support both operating systems we have to check both `(event.ctrlKey || event.metaKey)`.
 
 We should keep mobile devices in mind when doing this however.
 

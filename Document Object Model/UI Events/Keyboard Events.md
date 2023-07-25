@@ -13,7 +13,7 @@ The `key` property is used for layout-dependant keys, while the `code` property 
   - Number keys return `Digit<number>` (i.e. `"Digit0"`)
   - Special keys return their own names (i.e. `"Enter"`)
 
-An exception is the `Fn` key where it doesn't have an associated keyboard event.
+An exception is the <kbd>Fn</kbd> key where it doesn't have an associated keyboard event.
 
 ## **II. Default actions**
 
