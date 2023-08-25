@@ -75,7 +75,7 @@ function mousemoveHandler(event) {
 
 	// (6) run if currentDropTarget from previous dropTarget changed
 	let currentDropTarget = elemBelow.closest(".droppable");
-	if (dropTarget != currentDropTarget) {
+	if (dropTarget !== currentDropTarget) {
 		// When inside, 1st condition is true and 2nd condition becomes null
 		if (dropTarget) {
 			dropTarget.style.background = "";

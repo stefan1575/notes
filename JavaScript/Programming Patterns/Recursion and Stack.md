@@ -152,8 +152,8 @@ For other values that don't immediately contain an array, we should make it be r
 ```js
 function sumSalaries(dept) {
 	// base case (case: 1)
-	if (Array.isArray(dept) {
-		return dept.reduce((prev, current) => prev + current.salary, 0)
+	if (Array.isArray(dept)) {
+		return dept.reduce((prev, current) => prev + current.salary, 0);
 	}
 	// recursive call (case: 2)
 	else {

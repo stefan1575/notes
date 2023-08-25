@@ -1,6 +1,6 @@
-# **`try...catch`**
+# **`try..catch`**
 
-The `try...catch` construct is composed of a `try`, `catch`, and a `finally` block.
+The `try..catch` construct is composed of a `try`, `catch`, and a `finally` block.
 
 1. The code inside the `try` block is executed.
 2. If an error occurred the code in the `try` block stops and the `catch` block starts executing, otherwise the `catch` block is skipped.
@@ -77,4 +77,6 @@ try {
 
 ### **Rethrowing**
 
-For instance, we are trying to parse a `JSON`
+Rethrowing is the practice of catching an error in the catch block and throwing it again.
+
+This can be useful if we want to only handle specific error types and let the others propagate up the call stack to be handled by the nearest outer try..catch block.
