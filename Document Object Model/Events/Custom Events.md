@@ -14,6 +14,7 @@ new Event(type[, options]);
 - options - An object that specifies characteristics about the event listener.
   - `bubbles` - if `true`, the event bubbles
   - `cancelable` - if `true`, the event's default action may be prevented
+  - `composed` - if `true`, the propagation path will start from the element residing in the shadow DOM instead of being retargeted to the shadow host element.
 
 ### **B. `CustomEvent` constructor**
 
