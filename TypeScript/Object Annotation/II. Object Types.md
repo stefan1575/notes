@@ -66,7 +66,7 @@ readonlyUser.name = "Steve";
 
 An index signature to define the types for the dynamically created properties of an object. It may be also typed as `readonly`.
 
-It is used if you don't the exact properties of an object during runtime, but the structure of its values.
+It is used if you don't know the exact properties of an object during runtime, but the structure of its values.
 
 The syntax for an index signature is an object containing "`[key: KeyType]: ValueType`" where the key can only contain `string`, `number`, `symbol`, and _template literal types_.
 
