@@ -128,3 +128,15 @@ import * from "/modules/sayBye.js";
 export { * } from "/modules/sayHi.js"; // imports all named exports
 export { default } from "/modules/sayHi.js";
 ```
+
+## **IV. Empty `import` and `export`**
+
+### **Empty `export`**
+
+When a script has an empty `export {}`, it will still execute in the order of an HTML document where it is defined. However the other scripts won't have access to the variables of the file with an empty export since modules have their own scope.
+
+This is used to avoid naming conflicts and to clearly see where each identifier is coming from.
+
+### **Empty `import`**
+
+You won't be able to access any variables when importing a file without any variables. However since the imported file will be evaluated, any code at that is not encapsulated inside a function or variable will be executed as a side effect.
