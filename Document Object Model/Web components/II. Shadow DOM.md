@@ -2,6 +2,8 @@
 
 The shadow DOM is a seperate DOM tree that is encapsulated and doesn't interfere with the document's behavior, structure, and styles.
 
+Their encapsulation ensures that the components styles and behavior are isolated preventing conflicts to create reusable custom elements across different parts of the website.
+
 ## **I. Element: `attachShadow`**
 
 The `attachShadow` method, attaches a shadow DOM tree to the specified element and returns a reference to its shadow root.
