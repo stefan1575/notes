@@ -92,7 +92,7 @@ In React, the component function should not mutate outside objects or variables 
 
 ### **Local Mutation**
 
-It is acceptable for a component to change variables or objects that are created within the scope of the component while rendering.
+It is acceptable for a component to change variables or objects that are created within the scope of the component _while_ rendering.
 
 ```jsx
 function ListItem({ number }) {
