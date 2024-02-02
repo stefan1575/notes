@@ -61,6 +61,8 @@ When a `set` function is called, the update is added to the _state queue_.
 
 Passing a function with the state as parameter that updates the state value as an argument of the `set` function allows us re-calculate the state value within the same re-render instead of replacing the state value.
 
+You can't still read the updated state value until it has been rendered however. Its current value can only be accessed through recalculation within the same render.
+
 ```jsx
 import { useState } from "react";
 
